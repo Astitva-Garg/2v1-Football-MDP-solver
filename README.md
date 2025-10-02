@@ -5,7 +5,7 @@ It is based on an assignment problem from IIT Bombay’s CS747 course (Reinforce
 
 ---
 
-## 🎮 Problem Description
+## Problem Description
 
 You control two attackers **B1** and **B2** against one defender **R** on a **4x4 football half-pitch**.  
 The objective is to maximize the probability of scoring a goal using **MDP planning**.
@@ -27,7 +27,7 @@ The objective is to maximize the probability of scoring a goal using **MDP plann
 
 ---
 
-## 📊 Transition Function
+## Transition Function
 
 The dynamics include **stochasticity** based on parameters `p` and `q`:
 
@@ -52,7 +52,7 @@ Terminal states occur when:
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 ```bash
 python >= 3.8
@@ -66,7 +66,7 @@ pip install pickle argparse
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Run the script with command line arguments:  
 
@@ -86,7 +86,7 @@ Arguments:
 
 ---
 
-## 📈 Outputs
+## Outputs
 
 - **Value Iteration** computes the optimal policy for attackers.  
 - The script then **simulates matches** (default: 10,000 runs) from starting state `(5, 9, 8, 1)`.  
@@ -100,10 +100,10 @@ wins: 6785, loss: 3215
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
-├── football_mdp.py               # Main solution file (your code)
+├── mdp.py               # Main solution file (your code)
 ├── all_states.pkl                 # Pickle file containing all possible states
 ├── pickle_policies/
 │   ├── random_policy.pkl
@@ -114,7 +114,7 @@ wins: 6785, loss: 3215
 
 ---
 
-## 🔮 Extensions
+## Extensions
 
 - Generate graphs showing probability of winning vs parameters `p` and `q`.  
 - Compare performance against different opponent strategies.  
@@ -122,7 +122,7 @@ wins: 6785, loss: 3215
 
 ---
 
-## 📜 License
+## License
 
 This project is released for **educational purposes** under the MIT License.
 
